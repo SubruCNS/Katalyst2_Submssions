@@ -63,7 +63,7 @@ body {
     text-shadow: 0.5px 0.5px 0.5px ghostwhite;
 }
 .dropdown a:hover{
-    background-color:rgb(223, 222, 222);
+    background-color:grey;
     display:inline;
 }
 
@@ -214,5 +214,8 @@ a.contents {
         padding: 0px;
         box-shadow: 1px 2px 4px rgb(203, 201, 201);
     }
-
+    .dropdown a:hover{
+        background-color:rgb(213, 210, 210);
+        display:inline;
+    }
 }
