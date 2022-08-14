@@ -1,0 +1,185 @@
+body{
+    /* background-color:green; */
+    margin:0;
+    margin-left:5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.idk {
+    display: grid;
+    height: 50em;
+    grid-template-columns: 35vw 48vw;
+    grid-template-rows: 35em 15em;
+    grid-template-areas:
+        "L1 L2"
+        "L3 L3";
+    float: right;
+    margin: 0;
+}
+.L1{
+    grid-area: L1;
+    border: 0.1cm;
+    border-color: black;
+    background-color: white;
+   
+}
+
+.b{
+    text-align:center;
+    background-color: white;
+    margin-top:25vh;
+}
+
+.button{
+    
+    background-color:black;
+    color: white;
+    padding: 14px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.L2{
+    grid-area: L2;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    background-image: url(LoremIpsum.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.L2 a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 1em;
+}
+#OPTION{
+    display: none;
+    
+}
+.L3{
+    grid-area:L3;
+    /* background-color: red; */
+    text-align: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+p{
+    font-size: 1.2em;
+    font-weight: 1.2em;
+    margin: 1em 0;
+}
+h5{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.parent{
+    display:grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 1fr;
+    width:80vw;
+    height:30rem;
+    margin:0;
+    margin-bottom: 20px;
+    margin-left:5vw;
+    gap:5vw;
+}
+.child{
+   display: flex;
+   flex-direction: column;
+}
+img.img2{
+  object-fit: cover;
+  width: 100%;
+  height:100%;
+
+}
+.child h4{
+   font-weight: 2em;
+   align-items: center;
+}
+a.contents{
+    text-align: center;
+    width:7em;
+    text-decoration: none;
+    color:black;
+    background-color: gray;
+    text-transform:uppercase;
+    margin:-1em auto;
+    box-shadow: 0 200px 100px 0 #3f3c3c;
+    
+    letter-spacing: 2px;
+    padding: 1em;
+}
+@media screen and (max-width:550px) {
+    body{
+        margin-left: 0px;
+    }
+    .idk{
+    display: grid;
+    height:auto;
+    width:100%;
+    grid-template-columns:100vw ;
+    grid-template-rows:25em 25em 25em;
+    grid-template-areas:
+    "a "
+    "b"
+    "c";
+
+    }
+    .L1{
+       
+        grid-area: a;
+    }
+    .L2{
+        grid-area: b;
+       
+    }
+    .L3{
+        grid-area: c;
+    }
+    .parent{
+    display: grid;
+    height:auto;
+    width:100%;
+    grid-template-columns:100vw ;
+    grid-template-rows:25em 25em 25em;
+    }
+    #OPTION{
+        display: inline;
+        color: black;
+        position: fixed;
+        margin: 0px;
+        top: 0px;
+        right:2em;
+        padding: 0px;
+        font-weight:5em;
+    
+        
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .L2 a{
+        color: black;
+        text-align: right;
+    }
+    .dropdown:hover .navbar{
+        display:flex;
+        background-color:white;
+        flex-direction: column;
+        position: fixed;
+        margin: 0px;
+        top:15px;
+        right:2em;
+        padding: 0px;
+    }
+
+}
