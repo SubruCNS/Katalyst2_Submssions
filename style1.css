@@ -24,7 +24,10 @@ body {
     background-color: white;
 
 }
-
+.L1 a:hover{
+    background-color:grey;
+    
+}
 .para1 {
     text-align: center;
     background-color: white;
@@ -57,11 +60,16 @@ body {
     color: white;
     font-size: 1.2em;
     padding: 1em;
+    text-shadow: 0.5px 0.5px 0.5px ghostwhite;
+}
+.dropdown a:hover{
+    background-color:rgb(223, 222, 222);
+    display:inline;
 }
 
 #OPTION {
     display: none;
-
+   
 }
 
 .L3 {
@@ -85,9 +93,7 @@ p {
 h5 {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-     font-size:1.5em;
-
+    font-size:1.5em;
 }
 
 .parent {
@@ -128,7 +134,6 @@ a.contents {
     text-transform: uppercase;
     margin: -1em auto;
     box-shadow: 0 200px 100px 0 #3f3c3c;
-
     letter-spacing: 2px;
     padding: 1em;
 }
@@ -175,13 +180,14 @@ a.contents {
 
     #OPTION {
         display: inline;
-        color: black;
+        color:black;
         position: fixed;
         margin: 0px;
         top: 0px;
         right: 2em;
         padding: 0px;
         font-weight: 5em;
+        font-size:1.5em;
 
 
     }
@@ -192,8 +198,9 @@ a.contents {
     }
 
     .L2 a {
-        color: black;
+        color:rgb(44, 43, 43);
         text-align: right;
+        
     }
 
     .dropdown:hover .navbar {
@@ -205,8 +212,7 @@ a.contents {
         top: 15px;
         right: 2em;
         padding: 0px;
-         font-size:1.5em;
-
+        box-shadow: 1px 2px 4px rgb(203, 201, 201);
     }
 
 }
